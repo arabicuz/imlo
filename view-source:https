@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html manifest="arabic.appcache" lang="uz-uz" dir="ltr" class="uk-notouch">
+<head>
+ <base href="/arabic/">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O'zbek tili imlo lug'ati | اۉزبېک تیلی املا لغتی</title>
+<meta name="keywords" content="imlo, imlo lug'at, o'zbek imlo qoidalari, lotin, kirill, orfografiya, asar">
+<meta name="description" content="O'zbek tili imlo lug'ati">
+<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<link rel="stylesheet" href="css/uikit.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="tm-isblog">
+
+<div id="header" class="header-stripe">
+<div class="uk-container uk-container-center">
+<div class="uk-grid">
+<div class="uk-width-1-1 tm-logo">
+<img src="images/imlo.svg" alt="Imlo lug'ati" width="200" height="80">
+</div>
+<div class="uk-width-1-1 uk-text-center">
+<div id="search_box">
+<input type="text" class="search" id="searchid" placeholder="so'zni kiriting" />
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="showcase-stripe">
+<div class="uk-container uk-container-center">
+<div id="word_found" style="display:none"></div>
+<div class="uk-container uk-container-center">
+<h1 class="white uk-text-center">Matnni o‘girish</h1>
+<div class="uk-grid">
+<div class="uk-width-medium-1-2" style="margin-bottom:20px">
+<div class="uk-grid" style="margin-bottom:20px">
+<div class="uk-width-1-2">
+<h3 class="white">Lotin</h3>
+</div>
+<div class="uk-width-1-2 uk-text-right">
+<button class="uk-button uk-button-primary" data-uk-modal="{target:'#l_rules'}">O‘girish qoidalari</button>
+</div>
+</div>
+<textarea id="lat" rows="20" class="retranslit" placeholder="Lotin alifbosidagi matnni shu yerga kiriting (ko‘pi bilan 10 000 belgi)">E’tiboringizga onlayn imlo lug‘ati va matnni lotin yozuvidan arab yozuviga o‘giradigan vositani havola etamiz.
+
+Sayt yuqorisidagi qidiruv satriga tekshirmoqchi bo‘lgan so‘zingizni yoki uning bir qismini kiriting. Qidiruv natijalari satr ostida alohida oynada ko‘rsatiladi. Agar siz tekshirmoqchi bo‘lgan so‘zda "h" yoki "x" harfi bo‘lsa, ammo so‘z aynan qaysisi bilan yozilishini bilmasangiz, so‘zni ikki harfdan istaganingizni ishlatib kiritavering - lug‘at o‘zi sizga to‘g‘ri so‘zni taklif qiladi.
+
+Matnni o‘girish oynasi esa sizga lotin yozuvidagi matnni arab yozuviga o‘girishga yordam beradi. Biz o‘girish imkon qadar bexato bo‘lishiga harakat qildik va yetarlicha samaraga erishdik. Lotin yozuvidagi o‘zbekcha matnni arab yozuviga o‘girish juda murakkab jarayon - biz imkoni boricha arab yozuvi qoidalariga amal qilib o‘giradigan dastur tuzishga harakat qildik. O‘girishdagi kamchiliklar uchun oldindan uzr so'raymiz. Dastur kiritilgan matnni 14000 ga yaqin so‘z jamlangan lug‘atdan foydalanib o‘giradi - lug‘atga kiritilmagan so‘zlar va qo‘shimchalar alohida qoidalar asosida o‘giriladi. Ushbu qoidalar bilan oyna yuqorisidagi "O‘girish qoidalari" tugmasi orqali tanishishingiz mumkin.
+
+Matn o‘girish uchun ushbu matnni o'chirib tashlab, uning o‘rniga lotin yozuvidagi o‘z matningizni kiriting va oyna ostidagi tugmani bosing.
+
+Saytni barcha do‘stlaringizga tavsiya qilishni unutmang.</textarea>
+<p class="uk-text-center"><button id="l2c_button" class="uk-button uk-button-large uk-button-primary" title="O‘girish">lotin <i class="uk-icon uk-icon-arrow-right"></i> عرب</button><button id="clear_l" class="uk-button uk-button-large uk-button-success" title="Oynani tozalash"><i class="uk-icon uk-icon-refresh"></i></button></p>
+</div>
+<div class="uk-width-medium-1-2" style="margin-bottom:20px">
+<div class="uk-grid" style="margin-bottom:20px">
+<div class="uk-width-1-2">
+<button class="uk-button uk-button-primary" data-uk-modal="{target:'#c_rules'}">اۉگیریش قاعده‌لری</button>
+</div>
+<div class="uk-width-1-2 uk-text-right">
+<h3 class="white">عرب</h3>
+</div>
+</div>
+<textarea dir="RTL" id="cyr" rows="20" class="retranslit"placeholder="">
+اعتبارینگیزگه آنلاین املا لغتي و متننی لاتین یازوويدن عرب یازوويگه اۉگیره‌دیگن واسطه‌نی حواله اېته‌میز.
+
+سَیت یوقاریسیده‌گی قیدیروو سطريگه تېکشیرماقچی بۉلگن سۉزینگیزنی یاکه اونینگ بیر قِسمینی کیريتینگ. قیدیروو نتیجه‌لری سطر آستيده علیحده آینه‌ده کۉرستیله‌دی. اگر سیز تېکشیرماقچی بۉلگن سۉزده "ح" یاکه "خ" حرفی بۉلسه، اما سۉز عیناً قه‌یسی‌سي بیلن یازيلیشینی بیلمه‌سنگیز، سۉزنی ایکّی حرفدن ایستگنینگیزني ایشلتيب کیریته‌وېرینگ - لغت اۉزي سیزگه تۉغری سۉزنی تکلیف قیله‌دی.
+
+متننی اۉگیریش آینه‌سی اېسه سیزگه لاتین یازوويده‌گی متننی عرب یازوويگه اۉگیریشگه یاردم بېره‌دی. بیز اۉگیریش امکان قدَر بې‌خطا بۉلیشيگه حرکت قیلدیک و یېترلی‌چه ثمره‌گه اېریشدیک. لاتین یازوويده‌گی اۉزبېکچه متننی عرب یازوويگه اۉگیریش جوده مرّکب جریان - بیز امکاني باریچه عرب یازووي قاعده‌لریگه عمل قیليب اۉگیره‌دیگن دستور توزیشگه حرکت قیلدیک. اۉگیریشده‌گی کمچیليکلر اوچون آلدیندن عذر سۉره‌یمیز. دستور کیريتیلگن متننی 14000 گه یقین سۉز جمع‌لنگن لغتدن فایده‌لنیب اۉگیره‌دی - لغتگه کیریتیلمه‌گن سۉزلر و  قۉشیمچه‌لر علیحده قاعده‌لر اساسيده اۉگیریله‌دی. اوشبو قاعده‌لر بیلن آینه یوقاریسیده‌گی "اۉگیریش قاعده‌لری" توگمه‌سی آرقه‌لی تنيشیشینگیز ممکن.
+
+متن اۉگیریش اوچون اوشبو متننی اۉچیريب تشلب، اونینگ اۉرنیگه لاتین یازوويده‌گی اۉز متنینگیزني کیريتینگ و آینه آستيده‌گی توگمه‌نی باسینگ.
+سَیتنی برچه دۉستلرینگیزگه توصیه قیلیشنی اونوتمنگ.
+</textarea>
+<p class="uk-text-center"><button id="clear_c" class="uk-button uk-button-large uk-button-success" title="Oynani tozalash"><i class="uk-icon uk-icon-refresh"></i></button></p>
+</div>
+</div>
+</div>
+<p class="uk-text-center"><a href="http://www.facebook.com/share.php?u=http://arabic.insof.uz" target="_blank" class="uk-icon-button uk-icon-facebook" title="Facebookda e'lon qilish"></a><a href="http://twitter.com/share?url=http://arabic.insof.uz" target="_blank" class="uk-icon-button uk-icon-twitter" title="Twitterda e'lon qilish"></a><a href="https://plus.google.com/share?url=http://arabic.insof.uz" target="_blank" class="uk-icon-button uk-icon-google-plus" title="Google Plusda e'lon qilish"></a></p>
+</div>
+</div>
+
+<div class="footer-stripe">
+<div class="uk-container uk-container-center">
+<footer class="tm-footer">
+<!-- <p class="uk-text-center uk-text-danger uk-text-large" style="font-weight:bold">Ushbu sayt birinchi bor ochilganda saqlab olinadi va keyinchalik undan internet tarmog‘iga ulanmay ham foydalansa bo‘ladi. Kompyuteringiz (yoki telefoningiz) internet tarmog‘iga ulanmagan bo‘lsa ham, browserni ochib, "arabic.insof.uz" manzilini kiriting va saytdan foydalanishda davom eting.</p> -->
+<div class="uk-container-center uk-width-medium-2-3">© <script>document.write(new Date().getFullYear())</script><br /><a href="https://www.facebook.com/jjavlon" target="_blank">Javlon Juraev</a><br /><a href="https://www.facebook.com/AbdulBasirIlghar1" target="_blank">Abdulbasir Ilg‘or</a>
+</footer>
+</div>
+</div>
+<div id="statusline" class="uk-text-center"></div>
+</div>
+
+<div id="result" style="display:none"></div>
+
+<div id="l_rules" class="uk-modal">
+<div class="uk-modal-dialog">
+<a class="uk-modal-close uk-close"></a>
+<p>Sayt kiritilgan matnni lug‘atdan foydalanib o‘giradi. Lug‘atdan tashqari so‘zlar va qo‘shimchalar arab yozuviga quyidagi qoidalar bo‘yicha o‘giriladi</p>
+<div class="uk-overflow-container">
+<table class="uk-table uk-table-hover uk-table-striped uk-table-condensed" style="font-family:arial">
+<thead>
+<tr>
+<th>Lotin harflari</th>
+<th>Arabga o‘girish qoidalari</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>So‘z boshida va o‘rtasida kelganda "ا" harfiga alishtiriladi. So‘z oxirida kelganda "ه" harfiga alishtiriladi.</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Barcha hollarda "ب" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Barcha hollarda "د" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>E</td>
+<td>So‘z boshida kelganda "اې" diografiga alishtiriladi.<br />
+Qolgan barcha hollarda "ې" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Barcha hollarda "ف" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Barcha hollarda "گ" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Barcha hollarda "ه" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>I</td>
+<td>So‘z boshida kelganda "اي" diografiga alishtiriladi. "IY" bo‘g‘ini "ي" kabi o‘giriladi.<br />
+Qolgan barcha hollarda "ی" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>J</td>
+<td>Barcha hollarda "ج" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Barcha hollarda "ک" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Barcha hollarda "ل" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Barcha hollarda "م" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Barcha hollarda "ن" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>O</td>
+<td>So‘z boshida kelganda "آ" harfiga alishtiriladi.<br />
+Qolgan barcha hollarda "ا" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Barcha hollarda "پ" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>Barcha hollarda "ق" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>R</td>
+<td>Barcha hollarda "ر" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>S</td>
+<td>Barcha hollarda "س" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Barcha hollarda "ت" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>U</td>
+<td>So‘z boshida kelganda "او" harfiga alishtiriladi.<br />
+Qolgan barcha hollarda "و" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Barcha hollarda "و" harfiga alishtiriladi. "VA" so‘zi "و" kabi o‘giriladi</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Barcha hollarda "خ" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>
+"I" harfi bilan qo‘shilib kelganda "یی" kabi o‘giriladi<br />
+"E" harfi bilan qo‘shilib kelganda "یې" kabi o‘giriladi<br />
+"O" harfi bilan qo‘shilib kelganda "یا" kabi o‘giriladi<br />
+"U" harfi bilan qo‘shilib kelganda "یو" kabi o‘giriladi<br />
+Qolgan barcha hollarda "یٔ" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Barcha hollarda "ز" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>O‘</td>
+<td>So‘z boshida kelganda "اۉ" harfiga alishtiriladi.<br />
+Qolgan barcha hollarda "ۉ" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>G‘</td>
+<td>Barcha hollarda "غ" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>Sh</td>
+<td>"S" va "H" harflari orasida tutuq belgisi kelganda ular alohida harf kabi o'giriladi<br />Qolgan barcha hollarda "ش" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>Ch</td>
+<td>Barcha hollarda "چ" harfiga alishtiriladi</td>
+</tr>
+<tr>
+<td>’ (tutuq belgis)</td>
+<td>Barcha hollarda "ع" harfiga alishtiriladi</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div id="c_rules" class="uk-modal">
+<div class="uk-modal-dialog">
+<a class="uk-modal-close uk-close"></a>
+<h3>سَیت کیريتیلگن متننی لغتدن فایده‌لنیب اۉگیره‌دی. لغتدن تشقری سۉزلر و  قۉشیمچه‌لر عرب یازوويگه قوییده‌گی قاعده‌لر بۉییچه اۉگیریله‌دی</h3>
+<div class="uk-overflow-container">
+<table class="uk-table uk-table-hover uk-table-striped uk-table-condensed" style="font-family:arial">
+<thead>
+<tr>
+<th>عربگه اۉگیریش قاعده‌لری</th>
+<th>لاتین حرفلری</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>سۉز باشيده و  اۉرته‌سیده کېلگنده "ا" حرفيگه الیشتیریله‌دی. سۉز آخریده کېلگنده "ه" حرفیگه الیشتیریله‌دی.</td>
+<td>A</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "ب" حرفیگه الیشتیریله‌دی</td>
+<td>B</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "د" حرفیگه الیشتیریله‌دی</td>
+<td>D</td>
+</tr>
+<tr>
+<td>سۉز باشیده کېلگنده "اې" دیوگره‌فيگه الیشتیریله‌دی.<br />
+قالگن برچه حاللرده "ې" حرفیگه الیشتیریله‌دی</td>
+<td>E</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "ف" حرفیگه الیشتیریله‌دی</td>
+<td>F</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "گ" حرفیگه الیشتیریله‌دی</td>
+<td>G</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "ه" حرفیگه الیشتیریله‌دی</td>
+<td>H</td>
+</tr>
+<tr>
+<td>سۉز باشیده کېلگنده "اي" دیوگره‌فيگه الیشتیریله‌دی. "IY" بۉغینی "ي" کبی اۉگیریله‌دی.<br />
+قالگن برچه حاللرده "ی" حرفیگه الیشتیریله‌دی</td>
+<td>I</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "ج" حرفیگه الیشتیریله‌دی</td>
+<td>J</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "ک" حرفیگه الیشتیریله‌دی</td>
+<td>K</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "ل" حرفیگه الیشتیریله‌دی</td>
+<td>L</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "م" حرفیگه الیشتیریله‌دی</td>
+<td>M</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "ن" حرفیگه الیشتیریله‌دی</td>
+<td>N</td>
+</tr>
+<tr>
+<td>سۉز باشیده کېلگنده "آ" حرفیگه الیشتیریله‌دی.<br />
+قالگن برچه حاللرده "ا" حرفیگه الیشتیریله‌دی</td>
+<td>O</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "پ" حرفیگه الیشتیریله‌دی</td>
+<td>P</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "ق" حرفیگه الیشتیریله‌دی</td>
+<td>Q</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "ر" حرفیگه الیشتیریله‌دی</td>
+<td>R</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "س" حرفیگه الیشتیریله‌دی</td>
+<td>S</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "ت" حرفیگه الیشتیریله‌دی</td>
+<td>T</td>
+</tr>
+<tr>
+<td>سۉز باشیده کېلگنده "او" حرفیگه الیشتیریله‌دی.<br />
+قالگن برچه حاللرده "و" حرفیگه الیشتیریله‌دی</td>
+<td>U</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "و" حرفیگه الیشتیریله‌دی. "VA" سۉزی"و" کبی اۉگیریله‌دی</td>
+<td>V</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "خ" حرفیگه الیشتیریله‌دی</td>
+<td>X</td>
+</tr>
+<tr>
+<td>
+"I" حرفی بیلن قۉشیلیب کېلگنده "یی" کبی اۉگیریله‌دی<br />
+"E" حرفی بیلن قۉشیلیب کېلگنده "یې" کبی اۉگیریله‌دی<br />
+"O" حرفی بیلن قۉشیلیب کېلگنده "یا" کبی اۉگیریله‌دی<br />
+"U" حرفی بیلن قۉشیلیب کېلگنده "یو" کبی اۉگیریله‌دی<br />
+قالگن برچه حاللرده "یٔ" حرفیگه الیشتیریله‌دی</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "ز" حرفیگه الیشتیریله‌دی</td>
+<td>Z</td>
+</tr>
+<tr>
+<td>سۉز باشیده کېلگنده "اۉ" حرفیگه الیشتیریله‌دی.<br />
+قالگن برچه حاللرده "ۉ" حرفیگه الیشتیریله‌دی</td>
+<td>O‘</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "غ" حرفیگه الیشتیریله‌دی</td>
+<td>G‘</td>
+</tr>
+<tr>
+<td>"S" va "H" حرفلری آره‌سیده توتوق بېلگیسی کېلگنده اولر علیحده حرف کبی اۉگیریله‌دی<br />قالگن برچه حاللرده "ش" حرفیگه الیشتیریله‌دی</td>
+<td>Sh</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "چ" حرفیگه الیشتیریله‌دی</td>
+<td>Ch</td>
+</tr>
+<tr>
+<td>برچه‌ حاللرده "ع" حرفیگه الیشتیریله‌دی</td>
+<td>’ (توتوق بېلگیسی)</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+
+ <script src="js/words.js"></script>
+<script src="js/arrays.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/papaparse.min.js"></script>
+<script src="js/funcs.js"></script>
+</body>
+</html>
